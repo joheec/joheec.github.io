@@ -1,0 +1,13 @@
+#media-icons {
+  display: flex;
+  justify-content: space-between;
+  width: 10em;
+}
+.media-link {
+  height: 2.5em;
+  width: 2.5em;
+}
+.media-img {
+  width: 100%;
+  height: 100%;
+}
