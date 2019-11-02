@@ -2,7 +2,6 @@
   height: 100%;
   width: 100%;
   background-color: white;
-  overflow-y: scroll;
 }
 .popup-enter {
   position: fixed;
@@ -39,4 +38,6 @@
 }
 .popup-content-container {
   margin: 0.5em;
+  height: calc(100% - 4em);
+  overflow-y: scroll;
 }
