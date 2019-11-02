@@ -1,5 +1,8 @@
 import React from 'react';
-import { Route } from 'react-router-dom';
+import {
+  Link,
+  Route,
+} from 'react-router-dom';
 import { CSSTransition } from 'react-transition-group';
 import './styles.css';
 
@@ -16,7 +19,14 @@ const Popup = (Component) => (path) => {
           unmountOnExit
         >
           <div className="popup-container">
-            <Component />
+            <div className="popup-close-container">
+              <Link to="/">
+                <div className="popup-close-button">x</div>
+              </Link>
+            </div>
+            <div className="popup-content-container">
+              <Component />
+            </div>
           </div>
         </CSSTransition>
       )
