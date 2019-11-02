@@ -5,7 +5,11 @@ import {
 } from 'react-router-dom';
 import { CSSTransition } from 'react-transition-group';
 import Homepage from '../Homepage';
-import Popup from '../Popup';
+import About from '../Content/About';
+import Lifestyle from '../Content/Lifestyle';
+import RollerDerby from '../Content/RollerDerby';
+import Finance from '../Content/Finance';
+import Tech from '../Content/Tech';
 import './styles.css';
 
 function App() {
@@ -26,23 +30,11 @@ function App() {
           )
         }
         </Route>
-        <Route path='/about'>
-        {
-          ({ match }) => (
-            <CSSTransition
-              in={match != null}
-              timeout={300}
-              classNames="popup"
-            >
-              <Popup />
-            </CSSTransition>
-          )
-        }
-        </Route>
-        <Route path='/lifestyle'></Route>
-        <Route path='/rollerderby'></Route>
-        <Route path='/finance'></Route>
-        <Route path='/tech'></Route>
+        <About />
+        <Lifestyle />
+        <RollerDerby />
+        <Finance />
+        <Tech />
       </div>
     </Router>
   );

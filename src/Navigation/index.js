@@ -4,13 +4,21 @@ import './styles.css';
 
 const Navigation = () => {
   return <div id="navigation-container">
-    <div className="navigation-button">
-      <Link to='/about'>about me</Link>
-    </div>
-    <div className="navigation-button">lifestyle</div>
-    <div className="navigation-button">roller derby</div>
-    <div className="navigation-button">finance</div>
-    <div className="navigation-button">tech</div>
+    <Link to='/about'>
+      <div className="navigation-button">about me</div>
+    </Link>
+    <Link to='/lifestyle'>
+      <div className="navigation-button">lifestyle</div>
+    </Link>
+    <Link to='/rollerderby'>
+      <div className="navigation-button">roller derby</div>
+    </Link>
+    <Link to='/finance'>
+      <div className="navigation-button">finance</div>
+    </Link>
+    <Link to='/tech'>
+      <div className="navigation-button">tech</div>
+    </Link>
   </div>;
 }
 
